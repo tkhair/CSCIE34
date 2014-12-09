@@ -1,0 +1,41 @@
+Menu at the very top (shows all modules of HR system, while we will be prototyping only Employees)
+Home
+Employees
+Customers
+Vendors
+Settings
+Employee tabs:
+General
+Personal Info
+Assignment
+Dependents
+Documents
+Leaves
+Wages
+
+
+      <script src="assets/jquery-1.9.1.min.js"></script>  
+        <script src="assets/jquery.mockjax.js"></script>
+        
+        <!-- momentjs --> 
+        <script src="assets/moment.min.js"></script> 
+        
+        <!-- select2 --> 
+        <link href="assets/select2.css" rel="stylesheet">
+        <script src="assets/select2.js"></script>         
+
+            <!-- bootstrap-datetimepicker -->
+        <link href="assets/datetimepicker.css" rel="stylesheet">
+        <script src="assets/bootstrap-datetimepicker.js"></script>        
+        
+        <!-- x-editable (bootstrap 3) -->
+        <link href="assets/bootstrap-editable.css" rel="stylesheet">
+        <script src="assets/bootstrap-editable.js"></script>
+
+        <!-- select2 bootstrap -->
+        <link href="assets/select2-bootstrap.css" rel="stylesheet">
+       
+        <!-- typeaheadjs -->
+        <link href="assets/typeahead.js-bootstrap.css" rel="stylesheet">
+        <script src="assets/typeahead.js"></script>         
+        <script src="assets/typeaheadjs.js"></script>        

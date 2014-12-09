@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>HRIS - Employee Profile</title>
+        <!-- Custom styles for this template -->
+    <link href="css/dashboard.css" rel="stylesheet">
+        <script src="assets/jquery-1.9.1.min.js"></script>  
+        <script src="assets/jquery.mockjax.js"></script>
+        
+        <!-- momentjs --> 
+        <script src="assets/moment.min.js"></script> 
+        
+        <!-- select2 --> 
+        <link href="assets/select2.css" rel="stylesheet">
+        <script src="assets/select2.js"></script>         
+
+        <!-- bootstrap 3 -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.min.js"></script>
+        <!-- bootstrap-datetimepicker -->
+        <link href="assets/datetimepicker.css" rel="stylesheet">
+        <script src="assets/bootstrap-datetimepicker.js"></script>        
+        
+        <!-- x-editable (bootstrap 3) -->
+    <link href="http://vitalets.github.io/x-editable/assets/x-editable/bootstrap3-editable/css/bootstrap-editable.css" rel="stylesheet"/>
+<script src="http://vitalets.github.io/x-editable/assets/x-editable/bootstrap3-editable/js/bootstrap-editable.js"></script>
+
+        <!-- select2 bootstrap -->
+        <link href="assets/select2-bootstrap.css" rel="stylesheet">
+       
+        <!-- typeaheadjs -->
+        <link href="assets/typeahead.js-bootstrap.css" rel="stylesheet">
+        <script src="assets/typeahead.js"></script>         
+        <script src="assets/typeaheadjs.js"></script>         
+               <!-- address input -->
+        <link href="assets/address.css" rel="stylesheet">
+        <script src="assets/address.js"></script>      
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Human Resources Information System</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+          <form class="navbar-form navbar-right">
+            <input type="text" class="form-control" placeholder="Search...">
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li><a href="#">Overview</a></li>
+            <li class="active"><a href="#">Employees<span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Customers</a></li>
+            <li><a href="#">Vendors</a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="#">Analytics</a></li>
+          </ul>
+        
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h1 class="page-header">Employee Profile</h1>
+<div>
+<ul class="nav nav-pills">
+  <li role="presentation" class="active"><a href="#">General</a></li>
+  <li role="presentation"><a href="#">Personal Info</a></li>
+  <li role="presentation"><a href="#">Assignment</a></li>
+  <li role="presentation"><a href="#">Dependents</a></li>
+  <li role="presentation"><a href="#">Documents</a></li>
+  <li role="presentation"><a href="#">Leaves</a></li>
+  <li role="presentation"><a href="#">Wages</a></li>
+</ul>
+</div>
+
+<div><button id="enable" class="btn btn-default">Edit data</button></div>
+
+<div>
+            <table id="user" class="table table-bordered table-striped" style="clear: both">
+                <tbody> 
+                    <tr>         
+                        <td width="35%">Simple text field</td>
+                        <td width="65%"><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter username">superuser</a></td>
+                    </tr>
+                    <tr>         
+                        <td>Empty text field, required</td>
+                        <td><a href="#" id="firstname" data-type="text" data-pk="1" data-placement="right" data-placeholder="Required" data-title="Enter your firstname"></a></td>
+                    </tr>  
+                    <tr>         
+                        <td>Select, local array, custom display</td>
+                        <td><a href="#" id="sex" data-type="select" data-pk="1" data-value="" data-title="Select sex"></a></td>
+                    </tr>
+                    <tr>         
+                        <td>Select, remote array, no buttons</td>
+                        <td><a href="#" id="group" data-type="select" data-pk="1" data-value="5" data-source="/groups" data-title="Select group">Admin</a></td>
+                    </tr> 
+                    <tr>         
+                        <td>Select, error while loading</td>
+                        <td><a href="#" id="status" data-type="select" data-pk="1" data-value="0" data-source="/status" data-title="Select status">Active</a></td>
+                    </tr>  
+                         
+                    <tr>         
+                        <td>Datepicker</td>
+                        <td>
+                        
+                        <span class="notready">not implemented for Bootstrap 3 yet</span>
+                        
+                        </td>
+                    </tr>
+                    <tr>         
+                        <td>Combodate (date)</td>
+                        <td><a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1"  data-title="Select Date of birth"></a></td>
+                    </tr> 
+                    <tr>         
+                        <td>Combodate (datetime)</td>
+                        <td><a href="#" id="event" data-type="combodate" data-template="D MMM YYYY  HH:mm" data-format="YYYY-MM-DD HH:mm" data-viewformat="MMM D, YYYY, HH:mm" data-pk="1"  data-title="Setup event date and time"></a></td>
+                    </tr> 
+                    
+                                         
+                                        
+                    <tr>         
+                        <td>Textarea, buttons below. Submit by <i>ctrl+enter</i></td>
+                        <td><a href="#" id="comments" data-type="textarea" data-pk="1" data-placeholder="Your comments here..." data-title="Enter comments">awesome
+user!</a></td>
+                    </tr> 
+                    
+                    
+                    
+                    
+                    <tr>         
+                        <td>Twitter typeahead.js</td>
+                        <td><a href="#" id="state2" data-type="typeaheadjs" data-pk="1" data-placement="right" data-title="Start typing State.."></a></td>
+                    </tr>                       
+                                         
+                                                        
+                    <tr>         
+                        <td>Checklist</td>
+                        <td><a href="#" id="fruits" data-type="checklist" data-value="2,3" data-title="Select fruits"></a></td>
+                    </tr>
+
+                    <tr>         
+                        <td>Select2 (tags mode)</td>
+                        <td><a href="#" id="tags" data-type="select2" data-pk="1" data-title="Enter tags">html, javascript</a></td>
+                    </tr>                    
+
+                    <tr>         
+                        <td>Select2 (dropdown mode)</td>
+                        <td><a href="#" id="country" data-type="select2" data-pk="1" data-value="BS" data-title="Select country"></a></td>
+                    </tr>  
+                    
+                    <tr>         
+                        <td>Custom input, several fields</td>
+                        <td><a href="#" id="address" data-type="address" data-pk="1" data-title="Please, fill address"></a></td>
+                    </tr>                      
+                                                                                                                
+                    
+                </tbody>
+            </table>
+</div>
+        </div>
+      </div>
+    </div>
+
+     <script src="js/index.js"></script> 
+    <script src="js/mock.js"></script> 
+  </body>
+</html>
