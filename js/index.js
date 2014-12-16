@@ -16,6 +16,45 @@ $(function(){
            name: 'username',
            title: 'Enter username'
     });
+        $('#pnum').editable({
+           url: '/post',
+           type: 'text',
+           pk: 1,
+           name: 'pnum',
+           title: 'Enter passport number'
+    });
+                $('#vsponsor').editable({
+           url: '/post',
+           type: 'text',
+           pk: 1,
+           name: 'vsponsor',
+           title: 'Enter visa sponsor'
+    });
+                        $('#vnum').editable({
+           url: '/post',
+           type: 'text',
+           pk: 1,
+           name: 'vnum',
+           title: 'Enter visa number'
+    });
+              
+
+       $('#name').editable({
+           url: '/post',
+           type: 'text',
+           pk: 1,
+           name: 'name',
+           title: 'Enter Employee Name'
+    });
+
+       $('#birthplace').editable({
+           url: '/post',
+           type: 'text',
+           pk: 1,
+           name: 'birthplace',
+           title: 'Enter place of birth'
+    });
+
     
     $('#firstname').editable({
         validate: function(value) {
@@ -39,7 +78,46 @@ $(function(){
                  $(this).empty(); 
              }
         }   
-    });    
+    });
+
+     $('#visatype').editable({
+        prepend: "not selected",
+        source: [
+            {value: 1, text: 'Resident'},
+            {value: 2, text: 'Visit'},
+            {value: 3, text: 'Other'}
+        ],
+        display: function(value, sourceData) {
+             var colors = {"": "gray", 1: "green", 2: "blue"},
+                 elem = $.grep(sourceData, function(o){return o.value == value;});
+                 
+             if(elem.length) {    
+                 $(this).text(elem[0].text).css("color", colors[value]); 
+             } else {
+                 $(this).empty(); 
+             }
+        }   
+    });
+
+
+
+        $('#marital').editable({
+        prepend: "not selected",
+        source: [
+            {value: 1, text: 'Married'},
+            {value: 2, text: 'Not Married'}
+        ],
+        display: function(value, sourceData) {
+             var colors = {"": "gray", 1: "green", 2: "blue"},
+                 elem = $.grep(sourceData, function(o){return o.value == value;});
+                 
+             if(elem.length) {    
+                 $(this).text(elem[0].text).css("color", colors[value]); 
+             } else {
+                 $(this).empty(); 
+             }
+        }   
+    });        
     
     $('#status').editable();   
     
@@ -54,6 +132,11 @@ $(function(){
     });  
         
     $('#dob').editable();
+        $('#effdate').editable();
+           $('#insdate').editable();
+           $('#pidate').editable();
+           $('#pedate').editable();
+           $('#vdate').editable();
           
     $('#event').editable({
         placement: 'right',
@@ -77,6 +160,18 @@ $(function(){
     $('#comments').editable({
         showbuttons: 'bottom'
     }); 
+        $('#pnotes').editable({
+        showbuttons: 'bottom'
+    }); 
+            $('#vnotes').editable({
+        showbuttons: 'bottom'
+    }); 
+                $('#insnotes').editable({
+        showbuttons: 'bottom'
+    }); 
+                    $('#ednotes').editable({
+        showbuttons: 'bottom'
+    }); 
     
     $('#note').editable(); 
     $('#pencil').click(function(e) {
@@ -96,6 +191,13 @@ $(function(){
             local: ["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Dakota","North Carolina","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"]
         }
     });   
+        $('#inscompany').editable({
+        value: 'Daman',
+        typeahead: {
+            name: 'insurance',
+            local: ["Daman", "Thiqa", "NARS", "ADNIC"]
+        }
+    });
    
    $('#fruits').editable({
        pk: 1,
@@ -130,13 +232,35 @@ $(function(){
         } 
     });      
 
-
-    
+    $('#nationality').editable({
+        source: countries,
+        select2: {
+            width: 200,
+            placeholder: 'Select country',
+            allowClear: true
+        } 
+    }); 
+       $('#pcountry').editable({
+        source: countries,
+        select2: {
+            width: 200,
+            placeholder: 'Select country',
+            allowClear: true
+        } 
+    });
+              $('#edcountry').editable({
+        source: countries,
+        select2: {
+            width: 200,
+            placeholder: 'Select country',
+            allowClear: true
+        } 
+    });
     $('#address').editable({
         url: '/post',
         value: {
-            city: "Moscow", 
-            street: "Lenina", 
+            city: "Dubai", 
+            street: "Salama Bin Butti", 
             building: "12"
         },
         validate: function(value) {
