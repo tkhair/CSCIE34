@@ -97,21 +97,7 @@
         </div>
         <div class="col-sm-10  main">
           <h1 class="page-header">Employee Profile</h1>
-                
-
-  <div id="rootwizard">
-  <ul>
-    <li><a href="#tab1" data-toggle="tab">Personal Info</a></li>
-    <li><a href="#tab2" data-toggle="tab">Assignment</a></li>
-    <li><a href="#tab3" data-toggle="tab">Dependents</a></li>
-    <li><a href="#tab4" data-toggle="tab">Documents</a></li>
-    <li><a href="#tab5" data-toggle="tab">Leaves</a></li>
-    <li><a href="#tab6" data-toggle="tab">Wages</a></li>
-  </ul>
-  <div class="tab-content">
-      <div class="tab-pane" id="tab1">
-        <div><br/><button id="enable" class="btn btn-lg btn-warning pull-right">On/Off Edit Mode</button> <br/></div>
-<table>
+ <table>
   <tr>
     <td><img src="assets/photo.JPG"></td>
     <td colspan="2"><h3>Sultan Al Mansouri</h3><br/>
@@ -130,38 +116,52 @@ Pay Rate <br/>
 <b>AED 100,000</b><br/>
         </td>
  
-</table>
+</table>               
+<br/>
+  <div id="rootwizard">
+  <ul>
+    <li><a href="#tab1" data-toggle="tab">Personal Info</a></li>
+    <li><a href="#tab2" data-toggle="tab">Assignment</a></li>
+    <li><a href="#tab3" data-toggle="tab">Dependents</a></li>
+    <li><a href="#tab4" data-toggle="tab">Documents</a></li>
+    <li><a href="#tab5" data-toggle="tab">Leaves</a></li>
+    <li><a href="#tab6" data-toggle="tab">Wages</a></li>
+  </ul>
+  <div class="tab-content">
+      <div class="tab-pane" id="tab1">
+        <div><br/><button id="enable" class="btn btn-lg btn-warning pull-right"><span class="glyphicon glyphicon-edit"></span> Edit Information</button> <br/></div>
 
 
- <h3>Personal Info</h3>       
+
+ 
  <table id="employee" class="table table-bordered table-striped" style="clear: both">
                       <tbody> 
                           <tr>         
-                              <td width="35%">Date of Birth</td>
+                              <td width="35%"><b>Date of Birth</b></td>
                                <td width="65%"><a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1"  data-title="Select Date of birth"></a></td>
                           </tr>
                           <tr>         
-                              <td>Country of Birth</td>
+                              <td><b>Country of Birth</b></td>
                               <td><a href="#" id="country" data-type="select2" data-pk="1" data-value="AE" data-title="Select country"></a></td>
                           </tr>
                           <tr>         
-                              <td>Gender</td>
+                              <td><b>Gender</b></td>
                               <td><a href="#" id="sex" data-type="select" data-pk="1" data-value="1" data-title="Select gender"></td>
                           </tr>
                           <tr>         
-                              <td>Marital Status</td>
+                              <td><b>Marital Status</b></td>
                               <td><a href="#" id="marital" data-type="select" data-pk="1" data-value="1" data-title="Select marital status"></td>
                           </tr>
                           <tr>         
-                              <td>Effective Date</td>
+                              <td><b>Effective Date</b></td>
                               <td><a href="#" id="effdate" data-type="combodate" data-value="2013-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1"  data-title="Enter Effective Date"></a></td>
                           </tr>
                           <tr>         
-                              <td>Nationality</td>
+                              <td><b>Nationality</b></td>
                               <td><a href="#" id="nationality" data-type="select2" data-pk="1" data-value="AE" data-title="Select country"></a></td>
                           </tr>
                           <tr>         
-                              <td>Address</td>
+                              <td><b>Address</b></td>
                               <td><a href="#" id="address" data-type="address" data-pk="1" data-title="Please, fill address"></a></td>
                           </tr>                                   
                                                </tbody>
@@ -212,7 +212,7 @@ Pay Rate <br/>
                               <td align="center"><input type="checkbox"></td>                                    
                               <td>Amina al Mansouri</td>
                               <td>Spouse</td>
-                              <td>Jerry Bosken</td>
+                              <td>19/08/1986</td>
                               <td>AB123456</td>
                               <td>USA</td>
                               <td>Housewife</td>
@@ -221,7 +221,7 @@ Pay Rate <br/>
                   </table>
       </div>
     <div class="tab-pane" id="tab4">
-      <div><br/><button id="docsenable" class="btn btn-lg btn-warning pull-right">On/Off Edit Mode</button> <br/></div>
+      <div><br/><button id="docsenable" class="btn btn-lg btn-warning pull-right"><span class="glyphicon glyphicon-edit"></span> Edit Information</button> <br/></div>
 <h3>Passport Information</h3>
       <a href="#" class="btn btn-primary btn-info"><span class="glyphicon glyphicon-list"></span> Create</a> <a href="#" class="btn btn-primary btn-danger"><span class="glyphicon glyphicon-remove"></span> Inactivate Current</a>
 <table id="passport" class="table table-bordered table-striped" style="clear: both">
@@ -370,7 +370,7 @@ Pay Rate <br/>
                   </table>
       </div>
     <div class="tab-pane" id="tab6">
-      <div><br/><button id="wages" class="btn btn-lg btn-warning pull-right">On/Off Edit Mode</button> <br/></div>
+      <div><br/><button id="wages" class="btn btn-lg btn-warning pull-right"><span class="glyphicon glyphicon-edit"></span> Edit Information</button> <br/></div>
 <h3>Monthly Earnings</h3>
 <table id="earnings" class="table table-bordered table-striped" style="clear: both">
                       <tbody> 
