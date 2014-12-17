@@ -39,6 +39,13 @@ $(function(){
            name: 'pnum',
            title: 'Enter passport number'
     });
+        $('#salary').editable({
+           url: '/post',
+           type: 'text',
+           pk: 1,
+           name: 'salary',
+           title: 'Enter amount'
+    });        
                 $('#vsponsor').editable({
            url: '/post',
            type: 'text',
@@ -143,7 +150,43 @@ $(function(){
         }   
     });
 
+     $('#frequency').editable({
+        prepend: "not selected",
+        source: [
+            {value: 1, text: 'monthly'},
+            {value: 2, text: 'annually'},
+            {value: 3, text: 'one time'}
+        ],
+        display: function(value, sourceData) {
+             var colors = {"": "gray", 1: "green", 2: "blue"},
+                 elem = $.grep(sourceData, function(o){return o.value == value;});
+                 
+             if(elem.length) {    
+                 $(this).text(elem[0].text).css("color", colors[value]); 
+             } else {
+                 $(this).empty(); 
+             }
+        }   
+    });
 
+          $('#costcenter').editable({
+        prepend: "not selected",
+        source: [
+            {value: 1, text: 'HR'},
+            {value: 2, text: 'Administration'},
+            {value: 3, text: 'Finance'}
+        ],
+        display: function(value, sourceData) {
+             var colors = {"": "gray", 1: "green", 2: "blue"},
+                 elem = $.grep(sourceData, function(o){return o.value == value;});
+                 
+             if(elem.length) {    
+                 $(this).text(elem[0].text).css("color", colors[value]); 
+             } else {
+                 $(this).empty(); 
+             }
+        }   
+    });
 
         $('#marital').editable({
         prepend: "not selected",
@@ -181,6 +224,7 @@ $(function(){
            $('#pidate').editable();
            $('#pedate').editable();
            $('#vdate').editable();
+           $('#sdate').editable();
           
     $('#event').editable({
         placement: 'right',

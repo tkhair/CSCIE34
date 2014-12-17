@@ -107,24 +107,38 @@
     <li><a href="#tab4" data-toggle="tab">Documents</a></li>
     <li><a href="#tab5" data-toggle="tab">Leaves</a></li>
     <li><a href="#tab6" data-toggle="tab">Wages</a></li>
-    <li><a href="#tab7" data-toggle="tab">Controls</a></li>
   </ul>
   <div class="tab-content">
       <div class="tab-pane" id="tab1">
         <div><br/><button id="enable" class="btn btn-lg btn-warning pull-right">On/Off Edit Mode</button> <br/></div>
+<table>
+  <tr>
+    <td><img src="assets/photo.JPG"></td>
+    <td colspan="2"><h3>Sultan Al Mansouri</h3><br/>
+<a href="maito:s.almansouri@abcdcompany.com">s.almansouri@abcdcompany.com</a></td>
+<td>Direct phone<br/>
+Employment ID<br/>
+Unit<br/>
+Direct Supervisor<br/>
+Pay Rate <br/>
+    </td>
+        <td>
+<b>12345678</b><br/>          
+<b>1234</b><br/>
+<b>HR Compensation & Benefits</b><br/>
+<b>Jerry Bosken</b><br/>
+<b>AED 100,000</b><br/>
+        </td>
+ 
+</table>
+
+
+ <h3>Personal Info</h3>       
  <table id="employee" class="table table-bordered table-striped" style="clear: both">
                       <tbody> 
                           <tr>         
-                              <td width="35%">Name</td>
-                              <td width="65%"><a href="#" id="name" data-type="text" data-pk="1" data-title="Enter Employee Name">Sultan Al Mansouri</a></td>
-                          </tr>
-                          <tr>         
-                              <td>Employee Number</td>
-                             <td>123456</td>
-                          </tr>
-                          <tr>         
-                              <td>Date of Birth</td>
-                               <td><a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1"  data-title="Select Date of birth"></a></td>
+                              <td width="35%">Date of Birth</td>
+                               <td width="65%"><a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1"  data-title="Select Date of birth"></a></td>
                           </tr>
                           <tr>         
                               <td>Country of Birth</td>
@@ -132,11 +146,11 @@
                           </tr>
                           <tr>         
                               <td>Gender</td>
-                              <td><a href="#" id="sex" data-type="select" data-pk="1" data-value="" data-title="Select gender"></td>
+                              <td><a href="#" id="sex" data-type="select" data-pk="1" data-value="1" data-title="Select gender"></td>
                           </tr>
                           <tr>         
                               <td>Marital Status</td>
-                              <td><a href="#" id="marital" data-type="select" data-pk="1" data-value="" data-title="Select marital status"></td>
+                              <td><a href="#" id="marital" data-type="select" data-pk="1" data-value="1" data-title="Select marital status"></td>
                           </tr>
                           <tr>         
                               <td>Effective Date</td>
@@ -158,15 +172,19 @@
 <a href="#" class="btn btn-primary btn-info"><span class="glyphicon glyphicon-list"></span> Create</a> <a href="#" class="btn btn-primary btn-info"><span class="glyphicon glyphicon-usd"></span> Change pay rate</a> <a href="#" class="btn btn-primary btn-info"><span class="glyphicon glyphicon-plane"></span> Promote</a> <a href="#" class="btn btn-primary btn-info"><span class="glyphicon glyphicon-transfer"></span> Transfer</a> <a href="#" class="btn btn-primary btn-info"><span class="glyphicon glyphicon-print"></span>Print to file</a> <a href="#" class="btn btn-primary btn-danger"><span class="glyphicon glyphicon-remove"></span> Inactivate</a>
 <table id="assignment" class="table table-bordered table-striped" style="clear: both">        <br/>
                       <tbody> 
-                          <tr>         
-                              <td>Position</td>
-                              <td>Organization Unit</td>
-                              <td>Manager</td>
-                              <td>Dotted Line Manager</td>
-                              <td>Active</td>
+                          <tr> 
+                              <td width="5%"><b>Select</b></td>        
+                              <td><b>Position Code</b></td>
+                              <td><b>Position</b></td>
+                              <td><b>Organization Unit</b></td>
+                              <td><b>Manager</b></td>
+                              <td><b>Dotted Line Manager</b></td>
+                              <td><b>Active</b></td>
                           </tr>
-                          <tr>         
+                          <tr>
+                              <td align="center"><input type="checkbox"></td>                                   
                               <td>3069</td>
+                              <td>HRIS Specialist</td>                              
                               <td>Compensation & Benefits</td>
                               <td>Jerry Bosken</td>
                               <td></td>
@@ -181,15 +199,17 @@
       <a href="#" class="btn btn-primary btn-info"><span class="glyphicon glyphicon-list"></span> Create</a> <a href="#" class="btn btn-primary btn-danger"><span class="glyphicon glyphicon-remove"></span> Inactivate</a>
 <table id="dependents" class="table table-bordered table-striped" style="clear: both">
                       <tbody> 
-                          <tr>         
-                              <td>Name</td>
-                              <td>Relationaship</td>
-                              <td>Date of Birth</td>
-                              <td>Passport Number</td>
-                              <td>Nationality</td>
-                              <td>Visa Status</td>                                                      
+                          <tr>  
+                              <td width="5%"><b>Select</b></td>                                  
+                              <td><b>Name</b></td>
+                              <td><b>Relationaship</b></td>
+                              <td><b>Date of Birth</b></td>
+                              <td><b>Passport Number</b></td>
+                              <td><b>Nationality</b></td>
+                              <td><b>Visa Status</b></td>                                                      
                           </tr>
-                          <tr>         
+                          <tr>  
+                              <td align="center"><input type="checkbox"></td>                                    
                               <td>Amina al Mansouri</td>
                               <td>Spouse</td>
                               <td>Jerry Bosken</td>
@@ -207,27 +227,27 @@
 <table id="passport" class="table table-bordered table-striped" style="clear: both">
                       <tbody> 
                           <tr>         
-                              <td width="35%">Holder Name</td>
+                              <td width="35%"><b>Holder Name</b></td>
                               <td width="65%">Sultan Al Mansouri</td>
                           </tr>
                           <tr>         
-                              <td>Doc #</td>
+                              <td><b>Doc #</b></td>
                               <td><a href="#" id="pnum" data-type="text" data-pk="1" data-title="Enter pssport number">123456</a></td>
                           </tr>
                           <tr>         
-                              <td>Issue Date</td>
+                              <td><b>Issue Date</b></td>
                               <td><a href="#" id="pidate" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1"  data-title="Select Date of birth"></a></td>
                           </tr>
                           <tr>         
-                              <td>Expiry Date</td>
+                              <td><b>Expiry Date</b></td>
                               <td><a href="#" id="pedate" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1"  data-title="Select Date of birth"></a></td>
                           </tr>
                           <tr>         
-                              <td>Place of Issue</td>
+                              <td><b>Place of Issue</b></td>
                               <td><a href="#" id="pcountry" data-type="select2" data-pk="1" data-value="AE" data-title="Select country"></a></td>
                           </tr>
                           <tr>         
-                              <td>Notes</td>
+                              <td><b>Notes</b></td>
                               <td><a href="#" id="pnotes" data-type="textarea" data-pk="1" data-placeholder="Your comments here..." data-title="Enter comments">blah
                                 blah
                                 blah</a></td>
@@ -240,28 +260,28 @@
       <table id="visa" class="table table-bordered table-striped" style="clear: both">
                       <tbody> 
                           <tr>         
-                              <td width="35%">Holder Name</td>
+                              <td width="35%"><b>Holder Name</b></td>
                               <td width="65%">Sultan Al Mansouri</td>
                           </tr>
                           <tr>         
-                              <td>Type</td>
+                              <td><b>Type</b></td>
                               <td><a href="#" id="visatype" data-type="select" data-pk="1" data-value="" data-title="Select visa type"></a></td>
                           </tr>
                                                     <tr>         
-                              <td>Number</td>
+                              <td><b>Number</b></td>
                               <td><a href="#" id="vnum" data-type="text" data-pk="1" data-title="Enter visa number">AE123456789</a></td>
                           </tr>
                           <tr>         
-                              <td>Sponsor</td>
+                              <td><b>Sponsor</b></td>
                               <td><a href="#" id="vsponsor" data-type="text" data-pk="1" data-title="Enter via sponsor">Own</a></td>
                           </tr>
                           <tr>         
-                              <td>Expiry Date</td>
+                              <td><b>Expiry Date</b></td>
                               <td><a href="#" id="vdate" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1"  data-title="Select Date of birth"></a></td>
                           </tr>
 
                           <tr>         
-                              <td>Notes</td>
+                              <td><b>Notes</b></td>
                               <td><a href="#" id="vnotes" data-type="textarea" data-pk="1" data-placeholder="Your comments here..." data-title="Enter comments"></td>
                           </tr>
                           </tbody>
@@ -272,23 +292,23 @@
       <table id="healthinsurance" class="table table-bordered table-striped" style="clear: both">
                       <tbody> 
                           <tr>         
-                              <td width="35%">Holder Name</td>
+                              <td width="35%"><b>Holder Name</b></td>
                               <td width="65%">Sultan Al Mansouri</td>
                           </tr>
                           <tr>         
-                              <td>Insurance Company</td>
+                              <td><b>Insurance Company</b></td>
                               <td><a href="#" id="inscompany" data-type="typeaheadjs" data-pk="1" data-placement="right" data-title="Start typing company name.."></a></td>
                           </tr>
                           <tr>         
-                              <td>Insurance Type</td>
+                              <td><b>Insurance Type</b></td>
                               <td><a href="#" id="instype" data-type="text" data-pk="1" data-title="Enter insurance type">Premier</a></td>
                           </tr>
                           <tr>         
-                              <td>Expiry Date</td>
+                              <td><b>Expiry Date</b></td>
                               <td><a href="#" id="insdate" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1"  data-title="Select Date of birth"></a></td>
                           </tr>
                           <tr>         
-                              <td>Notes</td>
+                              <td><b>Notes</b></td>
                               <td><a href="#" id="insnotes" data-type="textarea" data-pk="1" data-placeholder="Your comments here..." data-title="Enter comments"></td>
                           </tr>
                           </tbody>
@@ -303,27 +323,27 @@
             <table id="education" class="table table-bordered table-striped" style="clear: both">
                       <tbody> 
                           <tr>         
-                              <td width="35%">Education level</td>
+                              <td width="35%"><b>Education level</b></td>
                               <td width="65%">MBA</td>
                           </tr>
                           <tr>         
-                              <td>Country</td>
+                              <td><b>Country</b></td>
                               <td><a href="#" id="edcountry" data-type="select2" data-pk="1" data-value="US" data-title="Select country"></a></td>
                           </tr>
                           <tr>         
-                              <td>Institution Name</td>
+                              <td><b>Institution Name</b></td>
                               <td><a href="#" id="edname" data-type="text" data-pk="1" data-title="Enter institution name">Harvard Extension School</a></td>
                           </tr>
                           <tr>         
-                              <td>Major</td>
+                              <td><b>Major</b></td>
                               <td><a href="#" id="major" data-type="text" data-pk="1" data-title="Enter major">HR Management</a></td>
                           </tr>
                           <tr>         
-                              <td>GPA</td>
-                              <td><a href="#" id="gpa" data-type="text" data-pk="1" data-title="Enter insurance type">3.5</a></td>
+                              <td><b>GPA</b></td>
+                              <td><a href="#" id="gpa" data-type="text" data-pk="1" data-title="Enter GPA">3.5</a></td>
                           </tr>
                           <tr>         
-                              <td>Notes</td>
+                              <td><b>Notes</b></td>
                               <td><a href="#" id="ednotes" data-type="textarea" data-pk="1" data-placeholder="Your comments here..." data-title="Enter comments"></td>
                           </tr>
                           </tbody>
@@ -335,15 +355,16 @@
 <table id="leaves" class="table table-bordered table-striped" style="clear: both">
                       <tbody> 
                           <tr>         
-                              <td>Leave Request Number</td>
-                              <td>Status</td>
-                              <td>Reason</td>
-                              <td>Type</td>
-                              <td>Begin</td>
-                              <td>Estimated Return</td>                              
+                              <td width="5%"><b>Select</b></td>                            
+                              <td><b>Leave Request Number</b></td>
+                              <td><b>Status</b></td>
+                              <td><b>Reason</b></td>
+                              <td><b>Type</b></td>
+                              <td><b>Begin</b></td>
+                              <td><b>Estimated Return</b></td>                              
                           </tr>
                           <tr>         
-                              <td colspan=6>No data available</td>
+                              <td colspan=7>No data available</td>
                           </tr>
                           </tbody>
                   </table>
@@ -353,198 +374,168 @@
 <h3>Monthly Earnings</h3>
 <table id="earnings" class="table table-bordered table-striped" style="clear: both">
                       <tbody> 
+       <tr>
+        <td width="25%"><b>Type</b></td>
+        <td width="10%"><b>Currency</b></td>
+        <td width="10%"><b>Amount</b></td>
+        <td width="20%"><b>Effective Date</b></td>
+        <td width="15%"><b>Frequency</b></td>
+        <td width="20%"><b>Cost Center</b></td>
+    </tr>
     <tr>
-        <td width="35%">Basic salary</td>
-        <td width="65%">AED 10,000</td>
+        <td>Basic salary</td>
+        <td>AED</td>
+        <td><a href="#" id="salary" data-type="text" data-pk="1" data-title="Enter amount">10,000</a></td>
+        <td><a href="#" id="sdate" data-type="combodate" data-value="2014-06-12" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1"  data-title="Select date"></a></td>
+        <td><a href="#" id="frequency" data-type="select" data-pk="1" data-value="" data-title="Select frequency"></a></td>
+        <td><a href="#" id="costcenter" data-type="select" data-pk="1" data-value="" data-title="Select cost center"></a></td>
     </tr>
     <tr>
         <td>Housing allowance</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>Housing Special</td>
-        <td></td>
+        <td>AED</td>
+        <td>5,000</td>
+        <td>12/06/2014</td>
+        <td>Monthly</td>  
+        <td>Administration</td>                              
     </tr>
     <tr>
         <td>Children allowance </td>
-        <td></td>
+        <td>AED</td>
+        <td>5,000</td>
+        <td>12/06/2014</td>
+        <td>Monthly</td>  
+        <td>Administration</td> 
     </tr>
     <tr>
         <td>Education allowance</td>
-        <td></td>
+        <td>AED</td>
+        <td>5,000</td>
+        <td>12/06/2014</td>
+        <td>Monthly</td>  
+        <td>Administration</td> 
     </tr>
     <tr>
         <td>Social Allowance (UAE Allowance)</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>Separation Allowance</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>Consultancy fees </td>
-        <td></td>
+        <td>AED</td>
+        <td>5,000</td>
+        <td>12/06/2014</td>
+        <td>Monthly</td>  
+        <td>Administration</td> 
     </tr>
     <tr>
         <td>Airfare</td>
-        <td></td>
+        <td>AED</td>
+        <td>5,000</td>
+        <td>12/06/2014</td>
+        <td>Monthly</td>  
+        <td>Administration</td> 
     </tr>
     <tr>
         <td>Lumpsum</td>
-        <td></td>
+        <td>AED</td>
+        <td>5,000</td>
+        <td>12/06/2014</td>
+        <td>Monthly</td>  
+        <td>Administration</td> 
     </tr>
-    <tr>
-        <td>Recreation</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>Secondment Allowance</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>Telephone rental</td>
-        <td></td>
-    </tr>
-    <tr>
+     <tr>
         <td>Transportation</td>
-        <td></td>
+        <td>AED</td>
+        <td>5,000</td>
+        <td>12/06/2014</td>
+        <td>Monthly</td>  
+        <td>Administration</td> 
     </tr>
     <tr>
         <td>Water & Electricity</td>
-        <td></td>
+        <td>AED</td>
+        <td>5,000</td>
+        <td>12/06/2014</td>
+        <td>Monthly</td>  
+        <td>Administration</td> 
+    </tr>
+        <tr>
+        <td><b>TOTAL</b></td>
+        <td>AED</td>
+        <td>100,000</td>
+        <td>12/06/2014</td>
+        <td>Monthly</td>  
+        <td>N/A</td> 
     </tr>
                       </tbody>
                   </table> 
 <h3>Benefits</h3>
 <table id="benefits" class="table table-bordered table-striped" style="clear: both">
                       <tbody> 
+   <tr>
+        <td width="25%"><b>Type</b></td>
+        <td width="10%"><b>Currency</b></td>
+        <td width="10%"><b>Amount</b></td>
+        <td width="20%"><b>Effective Date</b></td>
+        <td width="15%"><b>Frequency</b></td>
+        <td width="20%"><b>Cost Center</b></td>
+    </tr>   
+
     <tr>
-        <td width="35%">Life Insurance Costs</td>
-        <td width="65%"></td>
+        <td>Life Insurance Costs</td>
+        <td>AED</td>
+        <td>7,000</td>
+        <td>12/06/2014</td>
+        <td>Annually</td>  
+        <td>HR</td> 
     </tr>
     <tr>
         <td>Total Cost Health Insurance (self and dependents)</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>Leave Provisions (number of days to be specified)</td>
-        <td></td>
+        <td>AED</td>
+        <td>7,000</td>
+        <td>12/06/2014</td>
+        <td>Annually</td>  
+        <td>HR</td> 
     </tr>
     <tr>
         <td>Bonus / Bonus provision</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>Miscellaneous</td>
-        <td></td>
+        <td>AED</td>
+        <td>7,000</td>
+        <td>12/06/2014</td>
+        <td>One time</td>  
+        <td>Administration</td> 
     </tr>
     <tr>
         <td>Employer Pension Contribution (%/Amount)</td>
-        <td></td>
+        <td>AED</td>
+        <td>7,000</td>
+        <td>12/06/2014</td>
+        <td>Annually</td>  
+        <td>HR</td> 
     </tr>
     <tr>
         <td>One Time Settlement Allowance</td>
-        <td></td>
+        <td>AED</td>
+        <td>7,000</td>
+        <td>12/06/2014</td>
+        <td>One time</td>  
+        <td>Finance</td> 
     </tr>
     <tr>
         <td>Repatriation Allowance</td>
-        <td></td>
+        <td>AED</td>
+        <td>7,000</td>
+        <td>12/06/2014</td>
+        <td>One time</td>  
+        <td>Finance</td> 
     </tr>
     <tr>
         <td>End of Service Benefits</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>Workmen's compensation</td>
-        <td></td>
+        <td>AED</td>
+        <td>7,000</td>
+        <td>12/06/2014</td>
+        <td>One time</td>  
+        <td>HR</td> 
     </tr>
                       </tbody>
                   </table> 
       </div>
-    <div class="tab-pane" id="tab7">
-        <div><br/><button id="ctrlenable" class="btn btn-default">On/Off Edit Mode</button> <br/></div>
-                  <table id="controls" class="table table-bordered table-striped" style="clear: both">
-                      <tbody> 
-                          <tr>         
-                              <td width="35%">Simple text field</td>
-                              <td width="65%"><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter username">superuser</a></td>
-                          </tr>
-                          <tr>         
-                              <td>Empty text field, required</td>
-                              <td><a href="#" id="firstname" data-type="text" data-pk="1" data-placement="right" data-placeholder="Required" data-title="Enter your firstname"></a></td>
-                          </tr>  
-                          <tr>         
-                              <td>Select, local array, custom display</td>
-                              <td><a href="#" id="sex" data-type="select" data-pk="1" data-value="" data-title="Select sex"></a></td>
-                          </tr>
-                          <tr>         
-                              <td>Select, remote array, no buttons</td>
-                              <td><a href="#" id="group" data-type="select" data-pk="1" data-value="5" data-source="/groups" data-title="Select group">Admin</a></td>
-                          </tr> 
-                          <tr>         
-                              <td>Select, error while loading</td>
-                              <td><a href="#" id="status" data-type="select" data-pk="1" data-value="0" data-source="/status" data-title="Select status">Active</a></td>
-                          </tr>  
-                               
-                          <tr>         
-                              <td>Datepicker</td>
-                              <td>
-                              
-                              <span class="notready">not implemented for Bootstrap 3 yet</span>
-                              
-                              </td>
-                          </tr>
-                          <tr>         
-                              <td>Combodate (date)</td>
-                              <td><a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1"  data-title="Select Date of birth"></a></td>
-                          </tr> 
-                          <tr>         
-                              <td>Combodate (datetime)</td>
-                              <td><a href="#" id="event" data-type="combodate" data-template="D MMM YYYY  HH:mm" data-format="YYYY-MM-DD HH:mm" data-viewformat="MMM D, YYYY, HH:mm" data-pk="1"  data-title="Setup event date and time"></a></td>
-                          </tr> 
-                          
-                                               
-                                              
-                          <tr>         
-                              <td>Textarea, buttons below. Submit by <i>ctrl+enter</i></td>
-                              <td><a href="#" id="comments" data-type="textarea" data-pk="1" data-placeholder="Your comments here..." data-title="Enter comments">awesome
-      user!</a></td>
-                          </tr> 
-                          
-                          
-                          
-                          
-                          <tr>         
-                              <td>Twitter typeahead.js</td>
-                              <td><a href="#" id="state2" data-type="typeaheadjs" data-pk="1" data-placement="right" data-title="Start typing State.."></a></td>
-                          </tr>                       
-                                               
-                                                              
-                          <tr>         
-                              <td>Checklist</td>
-                              <td><a href="#" id="fruits" data-type="checklist" data-value="2,3" data-title="Select fruits"></a></td>
-                          </tr>
-
-                          <tr>         
-                              <td>Select2 (tags mode)</td>
-                              <td><a href="#" id="tags" data-type="select2" data-pk="1" data-title="Enter tags">html, javascript</a></td>
-                          </tr>                    
-
-                          <tr>         
-                              <td>Select2 (dropdown mode)</td>
-                              <td><a href="#" id="country" data-type="select2" data-pk="1" data-value="BS" data-title="Select country"></a></td>
-                          </tr>  
-                          
-                          <tr>         
-                              <td>Custom input, several fields</td>
-                              <td><a href="#" id="address" data-type="address" data-pk="1" data-title="Please, fill address"></a></td>
-                          </tr>                      
-                                                                                                                      
-                          
-                      </tbody>
-                  </table>
-      </div>
-  
+    
 <ul class="pager wizard">
       <li class="previous first" style="display:none;"><a href="#">First</a></li>
       <li class="previous"><a href="#">Previous</a></li>
