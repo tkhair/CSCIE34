@@ -152,6 +152,7 @@
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
   background-repeat: repeat-x;
   border-color: #e38d13;
+    margin-bottom: 10px;
 }
 .btn-warning:hover,
 .btn-warning:focus {

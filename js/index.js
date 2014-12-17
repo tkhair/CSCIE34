@@ -5,8 +5,24 @@ $(function(){
 
     //enable / disable
    $('#enable').click(function() {
-       $('#user .editable').editable('toggleDisabled');
-   });    
+       $('#employee .editable').editable('toggleDisabled');
+   });  
+
+      $('#ctrlenable').click(function() {
+       $('#controls .editable').editable('toggleDisabled');
+   });  
+
+      $('#wages').click(function() {
+       $('#earnings .editable').editable('toggleDisabled');
+       $('#benefits .editable').editable('toggleDisabled');
+   }); 
+
+     $('#docsenable').click(function() {
+       $('#passport .editable').editable('toggleDisabled'),
+       $('#visa .editable').editable('toggleDisabled'),
+       $('#healthinsurance .editable').editable('toggleDisabled'),
+       $('#education .editable').editable('toggleDisabled');                     
+   });  
     
     //editables 
     $('#username').editable({
@@ -37,7 +53,35 @@ $(function(){
            name: 'vnum',
            title: 'Enter visa number'
     });
-              
+
+            $('#instype').editable({
+           url: '/post',
+           type: 'text',
+           pk: 1,
+           name: 'instype',
+           title: 'Enter insurance type'
+    });
+                            $('#edname').editable({
+           url: '/post',
+           type: 'text',
+           pk: 1,
+           name: 'edname',
+           title: 'Enter institution name'
+    });    
+                            $('#major').editable({
+           url: '/post',
+           type: 'text',
+           pk: 1,
+           name: 'edname',
+           title: 'Enter major'
+    });                            
+                            $('#gpa').editable({
+           url: '/post',
+           type: 'text',
+           pk: 1,
+           name: 'gpa',
+           title: 'Enter GPA'
+    });                 
 
        $('#name').editable({
            url: '/post',

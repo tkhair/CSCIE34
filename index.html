@@ -46,12 +46,8 @@
         <link href="assets/address.css" rel="stylesheet">
         <script src="assets/address.js"></script>      
                 <script>
-            var c = window.location.href.match(/c=inline/i) ? 'inline' : 'inline';
-            $.fn.editable.defaults.mode = c === 'inline' ? 'inline' : 'inline';
-
-            $(function(){
-                $('#c').val(c);
-                        });
+          $.fn.editable.defaults.mode = 'inline';
+          $.fn.editable.defaults.disabled = 'true';
         </script>     
         <script> $(document).ready(function() {
     $('#rootwizard').bootstrapWizard({'tabClass': 'nav nav-pills'});
@@ -99,7 +95,7 @@
           </ul>
         
         </div>
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+        <div class="col-sm-10  main">
           <h1 class="page-header">Employee Profile</h1>
                 
 
@@ -115,8 +111,8 @@
   </ul>
   <div class="tab-content">
       <div class="tab-pane" id="tab1">
-        <div><br/><button id="enable" class="btn btn-default">On/Off Edit Mode</button> <br/></div>
- <table id="user" class="table table-bordered table-striped" style="clear: both">
+        <div><br/><button id="enable" class="btn btn-lg btn-warning pull-right">On/Off Edit Mode</button> <br/></div>
+ <table id="employee" class="table table-bordered table-striped" style="clear: both">
                       <tbody> 
                           <tr>         
                               <td width="35%">Name</td>
@@ -205,7 +201,7 @@
                   </table>
       </div>
     <div class="tab-pane" id="tab4">
-      <div><br/><button id="enable" class="btn btn-default">On/Off Edit Mode</button> <br/></div>
+      <div><br/><button id="docsenable" class="btn btn-lg btn-warning pull-right">On/Off Edit Mode</button> <br/></div>
 <h3>Passport Information</h3>
       <a href="#" class="btn btn-primary btn-info"><span class="glyphicon glyphicon-list"></span> Create</a> <a href="#" class="btn btn-primary btn-danger"><span class="glyphicon glyphicon-remove"></span> Inactivate Current</a>
 <table id="passport" class="table table-bordered table-striped" style="clear: both">
@@ -316,15 +312,15 @@
                           </tr>
                           <tr>         
                               <td>Institution Name</td>
-                              <td>Harvard Extension School</td>
+                              <td><a href="#" id="edname" data-type="text" data-pk="1" data-title="Enter institution name">Harvard Extension School</a></td>
                           </tr>
                           <tr>         
                               <td>Major</td>
-                              <td>HR Management</td>
+                              <td><a href="#" id="major" data-type="text" data-pk="1" data-title="Enter major">HR Management</a></td>
                           </tr>
                           <tr>         
                               <td>GPA</td>
-                              <td>3.5</td>
+                              <td><a href="#" id="gpa" data-type="text" data-pk="1" data-title="Enter insurance type">3.5</a></td>
                           </tr>
                           <tr>         
                               <td>Notes</td>
@@ -353,6 +349,7 @@
                   </table>
       </div>
     <div class="tab-pane" id="tab6">
+      <div><br/><button id="wages" class="btn btn-lg btn-warning pull-right">On/Off Edit Mode</button> <br/></div>
 <h3>Monthly Earnings</h3>
 <table id="earnings" class="table table-bordered table-striped" style="clear: both">
                       <tbody> 
@@ -465,10 +462,8 @@
                   </table> 
       </div>
     <div class="tab-pane" id="tab7">
-
-
-
-                  <table id="user" class="table table-bordered table-striped" style="clear: both">
+        <div><br/><button id="ctrlenable" class="btn btn-default">On/Off Edit Mode</button> <br/></div>
+                  <table id="controls" class="table table-bordered table-striped" style="clear: both">
                       <tbody> 
                           <tr>         
                               <td width="35%">Simple text field</td>
