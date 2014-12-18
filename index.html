@@ -96,12 +96,12 @@
         
         </div>
         <div class="col-sm-10  main">
-          <h1 class="page-header">Employee Profile</h1>
+          <h1 class="page-header">Employees</h1>
  <table>
   <tr>
     <td><img src="assets/photo.JPG"></td>
     <td colspan="2"><h3>Sultan Al Mansouri</h3><br/>
-<a href="maito:s.almansouri@abcdcompany.com">s.almansouri@abcdcompany.com</a></td>
+<a href="maito:s.almansouri@abcdcompany.com">s.almansouri@abcdcompany.com</a>&nbsp;&nbsp;&nbsp;</td>
 <td>Direct phone<br/>
 Employment ID<br/>
 Unit<br/>
@@ -109,11 +109,11 @@ Direct Supervisor<br/>
 Pay Rate <br/>
     </td>
         <td>
-<b>12345678</b><br/>          
-<b>1234</b><br/>
-<b>HR Compensation & Benefits</b><br/>
-<b>Jerry Bosken</b><br/>
-<b>AED 100,000</b><br/>
+<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12345678</b><br/>          
+<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1234</b><br/>
+<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HR Compensation & Benefits</b><br/>
+<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jerry Bosken</b><br/>
+<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AED 100,000</b><br/>
         </td>
  
 </table>               
@@ -129,13 +129,14 @@ Pay Rate <br/>
   </ul>
   <div class="tab-content">
       <div class="tab-pane" id="tab1">
-        <div><br/><button id="enable" class="btn btn-lg btn-warning pull-right"><span class="glyphicon glyphicon-edit"></span> Edit Information</button> <br/></div>
-
-
-
- 
+        <div><br/><button id="enable" class="btn btn-primary btn-warning pull-right"><span class="glyphicon glyphicon-edit"></span> Edit Information</button> <br/></div>
+<div class="row">&nbsp;</div>
  <table id="employee" class="table table-bordered table-striped" style="clear: both">
                       <tbody> 
+<tr>         
+                              <td width="35%"><b>Name</b></td>
+                               <td width="65%"><a href="#" id="name" data-type="text" data-pk="1" data-title="Enter employee name">Sultan Al Mansouri</a></td>
+                          </tr>                        
                           <tr>         
                               <td width="35%"><b>Date of Birth</b></td>
                                <td width="65%"><a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1"  data-title="Select Date of birth"></a></td>
@@ -170,7 +171,8 @@ Pay Rate <br/>
       <div class="tab-pane" id="tab2">
         <br/>
 <a href="#" class="btn btn-primary btn-info"><span class="glyphicon glyphicon-list"></span> Create</a> <a href="#" class="btn btn-primary btn-info"><span class="glyphicon glyphicon-usd"></span> Change pay rate</a> <a href="#" class="btn btn-primary btn-info"><span class="glyphicon glyphicon-plane"></span> Promote</a> <a href="#" class="btn btn-primary btn-info"><span class="glyphicon glyphicon-transfer"></span> Transfer</a> <a href="#" class="btn btn-primary btn-info"><span class="glyphicon glyphicon-print"></span>Print to file</a> <a href="#" class="btn btn-primary btn-danger"><span class="glyphicon glyphicon-remove"></span> Inactivate</a>
-<table id="assignment" class="table table-bordered table-striped" style="clear: both">        <br/>
+<table id="assignment" class="table table-bordered table-striped" style="clear: both">
+  <div class="row">&nbsp;</div>
                       <tbody> 
                           <tr> 
                               <td width="5%"><b>Select</b></td>        
@@ -197,6 +199,7 @@ Pay Rate <br/>
       </div>
     <div class="tab-pane" id="tab3">
       <a href="#" class="btn btn-primary btn-info"><span class="glyphicon glyphicon-list"></span> Create</a> <a href="#" class="btn btn-primary btn-danger"><span class="glyphicon glyphicon-remove"></span> Inactivate</a>
+      <div class="row">&nbsp;</div>
 <table id="dependents" class="table table-bordered table-striped" style="clear: both">
                       <tbody> 
                           <tr>  
@@ -221,7 +224,8 @@ Pay Rate <br/>
                   </table>
       </div>
     <div class="tab-pane" id="tab4">
-      <div><br/><button id="docsenable" class="btn btn-lg btn-warning pull-right"><span class="glyphicon glyphicon-edit"></span> Edit Information</button> <br/></div>
+      <div><br/><button id="docsenable" class="btn btn-primary btn-warning pull-right"><span class="glyphicon glyphicon-edit"></span> Edit Information</button> <br/></div>
+
 <h3>Passport Information</h3>
       <a href="#" class="btn btn-primary btn-info"><span class="glyphicon glyphicon-list"></span> Create</a> <a href="#" class="btn btn-primary btn-danger"><span class="glyphicon glyphicon-remove"></span> Inactivate Current</a>
 <table id="passport" class="table table-bordered table-striped" style="clear: both">
@@ -352,6 +356,7 @@ Pay Rate <br/>
       </div>
     <div class="tab-pane" id="tab5">
 <a href="#" class="btn btn-primary btn-info"><span class="glyphicon glyphicon-list"></span> Create</a> <a href="#" class="btn btn-primary btn-danger" disabled="disabled"><span class="glyphicon glyphicon-remove"></span> Delete</a>
+<div class="row">&nbsp;</div>
 <table id="leaves" class="table table-bordered table-striped" style="clear: both">
                       <tbody> 
                           <tr>         
@@ -370,7 +375,7 @@ Pay Rate <br/>
                   </table>
       </div>
     <div class="tab-pane" id="tab6">
-      <div><br/><button id="wages" class="btn btn-lg btn-warning pull-right"><span class="glyphicon glyphicon-edit"></span> Edit Information</button> <br/></div>
+      <div><br/><button id="wages" class="btn btn-primary btn-warning pull-right"><span class="glyphicon glyphicon-edit"></span> Edit Information</button> <br/></div>
 <h3>Monthly Earnings</h3>
 <table id="earnings" class="table table-bordered table-striped" style="clear: both">
                       <tbody> 
